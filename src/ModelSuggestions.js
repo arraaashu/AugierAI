@@ -1,8 +1,7 @@
-// src/components/LanguageModelSuggestions.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const LanguageModelSuggestions = ({ copiedText }) => {
+const ModelSuggestions = ({ copiedText }) => {
   const [suggestion, setSuggestion] = useState('');
 
   const getSuggestions = async () => {
@@ -23,4 +22,4 @@ const LanguageModelSuggestions = ({ copiedText }) => {
   );
 };
 
-export default LanguageModelSuggestions;
+export default ModelSuggestions;
